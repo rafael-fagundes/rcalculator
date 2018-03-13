@@ -24,7 +24,7 @@ gulp.task('static', () =>
 gulp.task('styles', () =>
     gulp.src('src/styles/*.sass')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./dist/styles'))
 );
 
 /* Pug task */
