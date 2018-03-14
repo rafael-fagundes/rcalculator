@@ -6,6 +6,7 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const ghpages = require('gh-pages');
 
 /* Clean dist folder */
 gulp.task('clean' , () => {
@@ -70,6 +71,12 @@ gulp.task('serve', ['build'] , () => {
 
 });
 
+/* Deploy */
+
+
+gulp.task('deploy', ['build'], () => {
+    ghpages.publish('dist', function(err) {});
+})
 
 /* Default Task */
 gulp.task('default', ['serve']);
