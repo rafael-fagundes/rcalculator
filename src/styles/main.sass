@@ -70,7 +70,7 @@ body
                 color: $digitColor
                 font:
                     family: 'Digital', monospace
-                    size: 50px
+                    size: 1.5em
     
     #calculator-header
         width: 100%
@@ -96,6 +96,16 @@ body
             border-radius: 10px
         .power-button:active
             background: $powerButtonBgColorInverse
+
+    #calculator-clear
+        .clear-button
+            border: 2px solid #333
+            padding: 10px 25px
+            background: $clearButtonBgColor
+            color: white
+            border-radius: 10px
+        .clear-button:active
+            background: $clearButtonBgColorInverse
     
     #calculator-numpad
         display: flex

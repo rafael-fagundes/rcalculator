@@ -2,7 +2,7 @@
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Fagundes Calculator
         link(rel="stylesheet", href="/styles/main.css")
@@ -15,18 +15,20 @@ html(lang="en")
                         span(style="visibility:hidden").digits 0
                 #calculator-header
                     #calculator-brand
-                        span.brand-name RAFAEL CALC
+                        span.brand-name rCALCULATOR
+                    #calculator-clear
+                        button.clear-button CLEAR
                     #calculator-power
                         button.power-button ON
                 #calculator-numpad
                     button(value="7").button 7
                     button(value="8").button 8
                     button(value="9").button 9
-                    button(value="÷").button ÷
+                    button(value="/").button ÷
                     button(value="4").button 4
                     button(value="5").button 5
                     button(value="6").button 6
-                    button(value="×").button ×
+                    button(value="*").button ×
                     button(value="1").button 1
                     button(value="2").button 2
                     button(value="3").button 3
